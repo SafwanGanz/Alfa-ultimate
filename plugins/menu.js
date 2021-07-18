@@ -41,7 +41,7 @@ const defaultMenu = {
 ┃%emos│ *ᴛɪᴍᴇ* : \`\`\`%time\`\`\`
 ┃%emos│ *ᴜᴘᴛɪᴍᴇ* : \`\`\`%uptime (%muptime)\`\`\`
 ┃%emos│ *ᴅᴀᴛᴀʙᴀsᴇ* : \`\`\`%rtotalreg of %totalreg\`\`\`
-┃%emos│ \`\`\`sc bot : https://youtu.be/HInmqcGVUJ4\`\`\`
+┃%emos│ \`\`\`sc bot : https://youtu.be/uCs1LszF_Ho\`\`\`
 ┃%emos│
 ┃%emos│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ┃%emos│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
