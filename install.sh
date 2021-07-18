@@ -107,12 +107,6 @@ echo -e " ${GREEN}"
 sleep 5
 npm install
 
-echo -e " ${NOCOLOR}"
-echo -e " ${PURPLE} Using the command: npm audit fix --force"
-echo -e " ${GREEN}"
-sleep 5
-npm audit fix --force
-
 echo -e " ${YELLOW} All dependencies have been installed."
 echo -e " ${YELLOW} Update: minimal changes"
 echo -e " ${YELLOW} Translated and modified by safwan/toxic. Base original script wabot-aq
