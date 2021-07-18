@@ -1,6 +1,6 @@
 {
   "name": "Toxic-Bot",
-  "version": "0.1.1",
+  "version": "2.0.1",
   "description": "Toxic Alien Official whatsapp bot",
   "depecrated": false,
   "main": "toxic.js",
