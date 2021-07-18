@@ -43,8 +43,8 @@ const defaultMenu = {
 ┃%emos│ *ᴅᴀᴛᴀʙᴀsᴇ* : \`\`\`%rtotalreg of %totalreg\`\`\`
 ┃%emos│ \`\`\`sc bot : https://youtu.be/HInmqcGVUJ4\`\`\`
 ┃%emos│
-┃%emos│ * ▎▍▌▌▉▏▎▌▉▐▏▌▎*
-┃%emos│ * ▎▍▌▌▉▏▎▌▉▐▏▌▎*
+┃%emos│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
+┃%emos│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ┃%emos│   \`\`\`ᴛᴏxɪᴄ ᴀʟɪᴇɴ ©2021\`\`\`
 ┃%emos╰─────────────────
 ╰══════════════════⊷❍
