@@ -4,7 +4,7 @@
 <a href="#"><img title="TOXIC-ALIEN" src="https://img.shields.io/badge/ToxicAlien-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
   <p align="center">
-<a href="https://github.com/farhan-dqz"><img title="Author" src="https://img.shields.io/badge/Author-SafwanGanz/toxic-bot?color=red&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/farhan-dqz"><img title="Author" src="https://img.shields.io/badge/Author-SafwanGanz/Alien-Alfa2?color=red&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
@@ -19,12 +19,12 @@ Project created by <a href="https://github.com/farhan-dqz">SafwanGanz</a> to mak
 
   <p align="center">
   <a href="httsp://github.com/farhan-dqz/JulieMwol">
-    <img src="https://img.shields.io/github/repo-size/SafwanGanz/toxic-bot?color=green&label=Repo%20total%20size&style=plastic">
+    <img src="https://img.shields.io/github/repo-size/SafwanGanz/Alien-Alfa2?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
 <a href="https://github.com/SafwanGanz/followers"><img title="Followers" src="https://img.shields.io/github/followers/SafwanGanz?color=blue&style=flat-square"></a>
-<a href="https://github.com/SafwanGanz/toxic-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/SafwanGanz/toxic-bot?color=blue&style=flat-square"></a>
-<a href="https://github.com/SafwanGanz/toxic-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/fSafwanGanz/toxic-bot?color=blue&style=flat-square"></a>
-<a href="https://github.com/SafwanGanz/toxic-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/SafwanGanz/toxic-bot?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/SafwanGanz//stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/SafwanGanz/Alien-Alfa2?color=blue&style=flat-square"></a>
+<a href="https://github.com/SafwanGanz/Alien-Alfa2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/fSafwanGanz/Alien-Alfa2?color=blue&style=flat-square"></a>
+<a href="https://github.com/SafwanGanz/Alien-Alfa2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/SafwanGanz/Alien-Alfa2?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
 </p>
 
@@ -32,10 +32,10 @@ Project created by <a href="https://github.com/farhan-dqz">SafwanGanz</a> to mak
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/BT0nNPBthyFI1ejoSr0i7W)
+  [![join](https://github.com/Alien-alfa2/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/BT0nNPBthyFI1ejoSr0i7W)
   <div align="center">
        
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=SafwanGanz&repo=toxic-bot&theme=nightowl)](https://github.com/SafwanGanz/toxic-bot)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=SafwanGanz&repo=Alien-Alfa2t&theme=nightowl)](https://github.com/SafwanGanz/Alien-Alfa2)
   </div>
 ## FOR TERMUX/UBUNTU/SSH USER
 
@@ -45,8 +45,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/SafwanGanz/Aien-Alfa
-cd Alien-Alfa
+git clone https://github.com/SafwanGanz/Aien-Alfa2
+cd Alien-Alfa2
 npm install
 ```
 
@@ -60,8 +60,8 @@ npm install
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/Nurutomo/wabot-aq
-cd Alien-Alfa
+git clone https://github.com/SafwanGanz/Aien-Alfa2
+cd Alien-Alfa2
 npm install
 ```
 
@@ -128,8 +128,5 @@ conn.logger.level = 'debug'
 
 #### Powered By : [`XTEAM`](https://api.xteam.xyz)
 
-#### Author / Creator : [`Nurutomo`](https://github.com/Nurutomo)
+#### Author / Creator : [`SafwanGanz`](https://github.com/SafwanGanz)
 
-#### Most Active Contributor : [`ariffb25`](https://github.com/ariffb25)
-
-#### 2nd Most Active Contributor: [`Ftwrr`](https://github.com/Ftwrr)
