@@ -27,7 +27,9 @@ Project created by <a href="https://github.com/farhan-dqz">SafwanGanz</a> to mak
 <a href="https://github.com/SafwanGanz/Alien-Alfa2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/SafwanGanz/Alien-Alfa2?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
 </p>
-
+  
+## [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/https://chat.whatsapp.com/LK5aLoXJ9Iq8uFrdr8TplF) [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![NodeJs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
+  
 ## 📢 Guide
 Click WA logo to Join Support Group 👇
     <br>
