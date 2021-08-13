@@ -18,12 +18,12 @@ Project created by <a href="https://github.com/farhan-dqz">SafwanGanz</a> to mak
 ----
 
   <p align="center">
-  <a href="httsp://github.com/farhan-dqz/JulieMwol">
+  <a href="https://github.com/SafwanGanz/Alien-Alfa2">
     <img src="https://img.shields.io/github/repo-size/SafwanGanz/Alien-Alfa2?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
 <a href="https://github.com/SafwanGanz/followers"><img title="Followers" src="https://img.shields.io/github/followers/SafwanGanz?color=blue&style=flat-square"></a>
 <a href="https://github.com/SafwanGanz//stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/SafwanGanz/Alien-Alfa2?color=blue&style=flat-square"></a>
-<a href="https://github.com/SafwanGanz/Alien-Alfa2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/fSafwanGanz/Alien-Alfa2?color=blue&style=flat-square"></a>
+<a href="https://github.com/SafwanGanz/Alien-Alfa2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/SafwanGanz/Alien-Alfa2?color=blue&style=flat-square"></a>
 <a href="https://github.com/SafwanGanz/Alien-Alfa2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/SafwanGanz/Alien-Alfa2?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
 </p>
