@@ -1,6 +1,9 @@
 let util = require('util')
 let simple = require('./lib/simple')
 let { MessageType } = require('@adiwajshing/baileys')
+let { Swiftcord } = require("swiftcord");
+const cord = new Swiftcord();
+
 
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(resolve, ms))
@@ -67,6 +70,7 @@ module.exports = {
           if (!('sDemote' in chat)) chat.sDemote = ''
           if (!('delete' in chat)) chat.delete = true
           if (!('antiLink' in chat)) chat.antiLink = false
+          if (!('viewonce' in chat)) chat.viewonce = false
         } else global.DATABASE._data.chats[m.chat] = {
           isBanned: false,
           welcome: false,
@@ -77,18 +81,24 @@ module.exports = {
           sDemote: '',
           delete: true,
           antiLink: false,
+          viewonce: false,
         }
       } catch (e) {
         console.error(e)
       }
-      if (opts['nyimak']) return
+    if (opts['nyimak']) return
       if (!m.fromMe && opts['self']) return
+      if (opts['pconly'] && m.chat.endsWith('g.us')) return
+      if (opts['gconly'] && !m.chat.endsWith('g.us')) return
+      if (opts['swonly'] && m.chat !== 'status@broadcast') return
       if (typeof m.text !== 'string') m.text = ''
       for (let name in global.plugins) {
         let plugin = global.plugins[name]
         if (!plugin) continue
         if (plugin.disabled) continue
         if (!plugin.all) continue
+        if (typeof m.text !== 'string') m.text = ''
+this.chatRead(m.chat)
         if (typeof plugin.all !== 'function') continue
         try {
           await plugin.all.call(this, m, chatUpdate)
@@ -313,23 +323,54 @@ module.exports = {
     let chat = global.DATABASE._data.chats[jid] || {}
     let text = ''
     switch (action) {
-      case 'add':
-      case 'remove':
+case 'add':
         if (chat.welcome) {
           let groupMetadata = await this.groupMetadata(jid)
           for (let user of participants) {
-            let pp = './src/avatar_contact.png'
+            let pp = 'https://telegra.ph/file/24fa902ead26340f3df2c.png'
             try {
               pp = await this.getProfilePicture(user)
             } catch (e) {
             } finally {
               text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
-              this.sendFile(jid, pp, 'pp.jpg', text, null, false, {
-                contextInfo: {
-                  mentionedJid: [user]
-                }
-              })
+        
+let image = await cord.Welcome()
+    .setUsername(this.getName(user))
+    .setDiscriminator(Math.floor(Math.random() * 9999))
+    .setMemberCount(groupMetadata.participants.length)
+    .setGuildName(groupMetadata.subject)
+    .setGuildIcon(await this.getProfilePicture(jid))
+    .setAvatar(pp)
+    .setBackground("https://i.ibb.co/gy75c7x/IMG-20210907-084829.jpg")
+    .toAttachment();
+conn.sendFile(jid, image, 'welcome.png', text, false, false, { contextInfo: { mentionedJid: this.parseMention(text)}})
+            }
+          }
+        }
+        break
+    case 'remove':
+        if (chat.welcome) {
+          let groupMetadata = await this.groupMetadata(jid)
+          for (let user of participants) {
+            let pp = 'https://telegra.ph/file/173372d216229af978c67.png'
+            try {
+              pp = await this.getProfilePicture(user)
+            } catch (e) {
+            } finally {
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
+                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+        
+let image = await cord.Goodbye()
+    .setUsername(this.getName(user))
+    .setDiscriminator(Math.floor(Math.random() * 9999))
+    .setMemberCount(groupMetadata.participants.length)
+    .setGuildName(groupMetadata.subject)
+    .setGuildIcon(await this.getProfilePicture(jid))
+    .setAvatar(pp)
+    .setBackground("https://i.ibb.co/gy75c7x/IMG-20210907-084829.jpg")
+    .toAttachment();
+conn.sendFile(jid, image, 'goodbye.png', text, false, false, { contextInfo: { mentionedJid: this.parseMention(text)}})
             }
           }
         }
@@ -374,7 +415,7 @@ Untuk mematikan fitur ini, ketik
           return
         break
     }
-    await this.sendMessage(from, 'Maaf, karena anda menelfon bot. anda diblokir otomatis', MessageType.extendedText)
+    await this.sendMessage(from, 'Sorry, because you called the bot. you are automatically blocked', MessageType.extendedText)
     await this.blockUser(from, 'add')
   }
 }
@@ -389,7 +430,7 @@ global.dfail = (type, m, conn) => {
      private: 'This command can only be used in Private Chat!',
      admin: 'This command is for *Admin* group only!',
      botAdmin: 'Make bot as *Admin* to use this command!',
-     unreg: 'Please register to use this feature by typing:\n\n*#register name.age list*\n\nExample: *#register toxic. 21*'
+     unreg: 'Please register to use this feature by typing:\n\n*#register name.age list*\n\nExample: *#register Human. 21*'
   }[type]
   if (msg) return m.reply(msg)
 }
